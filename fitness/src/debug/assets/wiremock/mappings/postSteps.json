@@ -1,0 +1,21 @@
+{
+  "request": {
+    "method": "GET",
+    "url": "/users/12345/steps",
+    "headers": {
+      "Content-Type": {
+        "equalTo" : "application/json"
+      }
+    }
+  },
+  "response": {
+    "status": 200,
+    "headers": {
+      "Content-Type": "application/json"
+    },
+    "jsonBody":
+    {
+      "step_count": "9768"
+    }
+  }
+}

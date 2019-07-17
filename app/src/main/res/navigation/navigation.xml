@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/navigation"
+            app:startDestination="@id/splashFragment">
+
+    <fragment
+            android:id="@+id/splashFragment"
+            android:name="com.greydog.fitapp.SplashFragment"
+            android:label="SplashFragment"
+            tools:layout="@layout/splash_fragment">
+        <action android:id="@+id/action_splashfragment_to_loginfragment"
+                app:destination="@id/loginFragment"
+                app:popUpToInclusive="true"
+                app:popUpTo="@id/splashFragment"/>
+        <action android:id="@+id/action_splashfragment_to_stepsfragment"
+            app:destination="@id/stepsFragment"
+            app:popUpToInclusive="true"
+            app:popUpTo="@id/splashFragment"/>
+    </fragment>
+
+    <fragment
+            android:id="@+id/loginFragment"
+            android:name="com.greydog.fitness.LoginFragment"
+            android:label="LoginFragment"
+            tools:layout="@layout/login_fragment">
+        <action android:id="@+id/action_loginfragment_to_stepsfragment"
+            app:destination="@id/stepsFragment"
+            app:popUpToInclusive="true"
+            app:popUpTo="@id/loginFragment"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/stepsFragment"
+        android:name="com.greydog.fitness.StepsFragment"
+        android:label="StepsFragment"
+        tools:layout="@layout/steps_fragment">
+    </fragment>
+
+</navigation>

@@ -1,0 +1,7 @@
+<resources>
+    <string name="headline">Summary</string>
+    <string name="experience">Experience</string>
+    <string name="contactinfo">Contact Info</string>
+    <string name="technologies">Technologies:</string>
+    <string name="status">(%s)</string>
+</resources>

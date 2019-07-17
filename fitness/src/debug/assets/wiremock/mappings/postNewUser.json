@@ -1,0 +1,22 @@
+{
+  "request": {
+    "method": "POST",
+    "url": "/sessions/new",
+    "headers": {
+      "Content-Type": {
+        "equalTo" : "application/json"
+      }
+    }
+  },
+  "response": {
+    "status": 200,
+    "headers": {
+      "Content-Type": "application/json"
+    },
+    "jsonBody":
+    {
+      "userid": "edp",
+      "token": "n8323n333n39435gbgn949ttxc43hubht54"
+    }
+  }
+}
